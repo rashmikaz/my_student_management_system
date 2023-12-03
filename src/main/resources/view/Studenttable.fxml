@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1500.0" style="-fx-background-color: DFE4EA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.Studenttablecontroller">
+    <children>
+        <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1e1e1e" height="860.0" layoutX="179.0" layoutY="51.0" smooth="false" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" style="visibility: 100;" width="217.0" AnchorPane.rightAnchor="1231.0" AnchorPane.topAnchor="26.0" />
+        <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#f5f6fa" height="860.0" layoutX="292.0" layoutY="51.0" stroke="#f5f6fa" strokeType="INSIDE" width="1307.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="26.0">
+            <cursor>
+                <Cursor fx:constant="MOVE" />
+            </cursor>
+        </Rectangle>
+        <TableView fx:id="tblCustomer" layoutX="254.0" layoutY="151.0" prefHeight="691.0" prefWidth="714.0">
+            <columns>
+                <TableColumn fx:id="colId" prefWidth="104.99505615234375" text="Id" />
+                <TableColumn fx:id="colName" minWidth="0.0" prefWidth="150.6759033203125" text="Name" />
+                <TableColumn fx:id="colAddress" minWidth="0.0" prefWidth="154.26141357421875" text="Address" />
+                <TableColumn fx:id="colTel" minWidth="0.0" prefWidth="143.301513671875" text="Tel" />
+                <TableColumn fx:id="colBirth" minWidth="0.0" prefWidth="159.3995361328125" text="Birth" />
+                <TableColumn fx:id="colEmail" minWidth="0.0" prefWidth="157.5804443359375" text="Email" />
+                <TableColumn fx:id="colNic" minWidth="6.3077392578125" prefWidth="135.7286376953125" text="Nic" />
+            </columns>
+        </TableView>
+        <Label layoutX="241.0" layoutY="55.0" prefHeight="79.0" prefWidth="350.0" text="Student Table">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="97.0" layoutY="105.0" onMouseClicked="#btnDashboardOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="95.0">
+         <image>
+            <Image url="@../icon/menu-regular-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="97.0" layoutY="200.0" onMouseClicked="#btnCustomerOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="190.0">
+         <image>
+            <Image url="@../icon/dashboardstudent.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="97.0" layoutY="295.0" onMouseClicked="#btnTeacherOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="285.0">
+         <image>
+            <Image url="@../icon/group-regular-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="97.0" layoutY="390.0" onMouseClicked="#btnPaymentOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="380.0">
+         <image>
+            <Image url="@../icon/icons8-circle-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="97.0" layoutY="485.0" onMouseClicked="#btnResultOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="475.0">
+         <image>
+            <Image url="@../icon/icons8-correct-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="98.0" layoutY="774.0" onMouseClicked="#btnLogoutOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="764.0">
+         <image>
+            <Image url="@../icon/logout.png" />
+         </image>
+      </ImageView>
+      <Circle fill="#3dc1d3" layoutX="1248.0" layoutY="685.0" radius="167.0" stroke="WHITE" strokeType="INSIDE" />
+      <ImageView fitHeight="440.0" fitWidth="435.0" layoutX="1037.0" layoutY="412.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/vecteezy_3d-male-character-happy-jumping_24132283.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="100.0" arcWidth="100.0" fill="#f1f2f6" height="195.0" layoutX="1177.0" layoutY="191.0" stroke="WHITE" width="190.0" />
+      <Circle fill="#feca57" layoutX="1252.0" layoutY="185.0" radius="31.0" stroke="WHITE" strokeType="INSIDE" />
+      <Text layoutX="1202.0" layoutY="250.0" strokeType="OUTSIDE" strokeWidth="0.0" text="student Manage">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <Text layoutX="1202.0" layoutY="281.0" onMouseClicked="#btnStudentOnAction" opacity="0.43" strokeType="OUTSIDE" strokeWidth="0.0" text="you can get all data from student deails here" wrappingWidth="149.5554990717144">
+         <font>
+            <Font size="17.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="1237.0" layoutY="167.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../icon/dashboardstudent.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

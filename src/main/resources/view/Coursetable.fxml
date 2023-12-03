@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1500.0" style="-fx-background-color: DFE4EA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.Coursetablecontroller">
+   <children>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1e1e1e" height="874.0" layoutX="62.0" layoutY="36.0" smooth="false" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="217.0" AnchorPane.rightAnchor="1231.0" AnchorPane.topAnchor="26.0" />
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#f5f6fa" height="874.0" layoutX="176.0" layoutY="36.0" stroke="#f5f6fa" strokeType="INSIDE" width="1307.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="26.0">
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+      </Rectangle>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="97.0" layoutY="105.0" onMouseClicked="#btnDashboardOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="95.0">
+         <image>
+            <Image url="@../icon/menu-regular-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="97.0" layoutY="200.0" onMouseClicked="#btnCustomerOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="190.0">
+         <image>
+            <Image url="@../icon/dashboardstudent.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="97.0" layoutY="295.0" onMouseClicked="#btnTeacherOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="285.0">
+         <image>
+            <Image url="@../icon/group-regular-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="97.0" layoutY="390.0" onMouseClicked="#btnPaymentOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="380.0">
+         <image>
+            <Image url="@../icon/icons8-circle-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="97.0" layoutY="485.0" onMouseClicked="#btnResultOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="475.0">
+         <image>
+            <Image url="@../icon/icons8-correct-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="93.0" layoutY="753.0" onMouseClicked="#btnLogoutOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="764.0">
+         <image>
+            <Image url="@../icon/logout.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="239.0" layoutY="83.0" prefHeight="79.0" prefWidth="477.0" text="Courses and Program">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Label>
+      <TableView fx:id="tblCourse" layoutX="259.0" layoutY="201.0" prefHeight="616.0" prefWidth="981.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="171.14599609375" text="Id" />
+          <TableColumn fx:id="colName" prefWidth="161.06198120117188" text="Name" />
+            <TableColumn fx:id="colDes" prefWidth="161.06198120117188" text="Desecription" />
+            <TableColumn fx:id="colQualification" prefWidth="161.06198120117188" text="Qualification" />
+            <TableColumn fx:id="colDuration" prefWidth="161.06198120117188" text="Duration" />
+            <TableColumn fx:id="colCost" prefWidth="161.06198120117188" text="Cost" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

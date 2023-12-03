@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1500.0" style="-fx-background-color: DFE4EA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.Schedulecontroller">
+   <children>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1e1e1e" height="842.0" layoutX="89.0" layoutY="54.0" smooth="false" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="217.0" AnchorPane.rightAnchor="1231.0" AnchorPane.topAnchor="26.0" />
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#f5f6fa" height="843.0" layoutX="443.0" layoutY="41.0" stroke="#f5f6fa" strokeType="INSIDE" width="1307.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="26.0">
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+      </Rectangle>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="90.0" layoutY="205.0" onMouseClicked="#btnDashboardOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="95.0">
+         <image>
+            <Image url="@../icon/menu-regular-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="104.0" layoutY="287.0" onMouseClicked="#btnStudentOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="190.0">
+         <image>
+            <Image url="@../icon/dashboardstudent.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="208.0" layoutY="423.0" onMouseClicked="#btnTeacherOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="285.0">
+         <image>
+            <Image url="@../icon/group-regular-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="215.0" layoutY="506.0" onMouseClicked="#btnPaymentOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="380.0">
+         <image>
+            <Image url="@../icon/icons8-circle-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="117.0" layoutY="505.0" onMouseClicked="#btnResultOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="475.0">
+         <image>
+            <Image url="@../icon/icons8-correct-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="113.0" layoutY="773.0" onMouseClicked="#btnLogoutOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="743.0">
+         <image>
+            <Image url="@../icon/logout.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="274.0" layoutY="104.0" text="Schedule">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#f1f2f6" height="623.0" layoutX="256.0" layoutY="193.0" stroke="#f1f2f6" strokeType="INSIDE" width="361.0" />
+      <JFXTextField fx:id="txtDay" layoutX="280.0" layoutY="519.0" prefHeight="26.0" prefWidth="235.0" promptText="Day" />
+      <JFXTextField fx:id="txtStart" layoutX="287.0" layoutY="615.0" prefHeight="26.0" prefWidth="163.0" promptText="Start Time" />
+      <JFXTextField fx:id="txtEnd" layoutX="293.0" layoutY="696.0" prefHeight="26.0" prefWidth="152.0" promptText="End Time" />
+      <JFXButton buttonType="RAISED" layoutX="293.0" layoutY="774.0" onAction="#btnAddOnAction" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #1e1e1e;" text="Add" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="396.0" layoutY="772.0" onAction="#btnDeleteOnAction" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #1e1e1e;" text="Delete" textFill="WHITE" />
+      <TableView fx:id="tblschedule" layoutX="669.0" layoutY="189.0" prefHeight="610.0" prefWidth="744.0">
+        <columns>
+          <TableColumn fx:id="colProgram" prefWidth="120.17291259765625" text="Program" />
+          <TableColumn fx:id="colModule" prefWidth="124.33154296875" text="Module" />
+            <TableColumn fx:id="colTeacher" prefWidth="124.33154296875" text="Teacher" />
+            <TableColumn fx:id="colDay" prefWidth="124.33154296875" text="Day" />
+            <TableColumn fx:id="colStart" prefWidth="124.33154296875" text="Start at" />
+            <TableColumn fx:id="colEnd" prefWidth="124.33154296875" text="end" />
+        </columns>
+      </TableView>
+      <ComboBox fx:id="cmbProgram" layoutX="286.0" layoutY="254.0" prefHeight="26.0" prefWidth="271.0" promptText="Program" />
+      <ComboBox fx:id="cmbModule" layoutX="290.0" layoutY="330.0" prefHeight="26.0" prefWidth="209.0" promptText="Module" />
+      <ComboBox fx:id="cmbTeacher" layoutX="288.0" layoutY="408.0" prefHeight="26.0" prefWidth="210.0" promptText="Teacher" />
+   </children>
+</AnchorPane>

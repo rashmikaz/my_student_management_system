@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXComboBox?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1500.0" style="-fx-background-color: DFE4EA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.PlacePaymentFormController">
+    <children>
+        <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1e1e1e" height="842.0" layoutX="169.0" layoutY="41.0" smooth="false" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" style="visibility: 100;" width="217.0" AnchorPane.rightAnchor="1231.0" AnchorPane.topAnchor="26.0" />
+        <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#f5f6fa" height="843.0" layoutX="282.0" layoutY="41.0" stroke="#f5f6fa" strokeType="INSIDE" width="1307.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="26.0">
+
+            <cursor>
+                <Cursor fx:constant="MOVE" />
+            </cursor>
+        </Rectangle>
+        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="204.0" layoutY="228.0" onMouseClicked="#btnDashboardOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="95.0">
+            <image>
+                <Image url="@../icon/menu-regular-24.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="204.0" layoutY="325.0" onMouseClicked="#btnCustomerOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="190.0">
+            <image>
+                <Image url="@../icon/dashboardstudent.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="202.0" layoutY="429.0" onMouseClicked="#btnTeacherOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="285.0">
+            <image>
+                <Image url="@../icon/group-regular-24.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="201.0" layoutY="531.0" onMouseClicked="#btnPaymentOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="380.0">
+            <image>
+                <Image url="@../icon/icons8-circle-64.png" />
+            </image>
+        </ImageView>
+        <Label layoutX="260.0" layoutY="78.0" prefHeight="79.0" prefWidth="265.0" text="Payments">
+            <font>
+                <Font name="System Bold" size="46.0" />
+            </font>
+        </Label>
+        <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#f1f2f6" height="628.0" layoutX="253.0" layoutY="203.0" stroke="#f1f2f6" strokeType="INSIDE" width="372.0" />
+        <Label fx:id="lblOrderId" layoutX="277.0" layoutY="258.0" text="Payment Id">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblOrderDate" layoutX="438.0" layoutY="256.0" text=" Payment Date">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="283.0" layoutY="351.0" text="Student Id">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <JFXComboBox fx:id="cmbCustomerId" layoutX="408.0" layoutY="334.0" onAction="#cmbCustomerOnAction" prefHeight="33.0" prefWidth="203.0" />
+        <Label layoutX="290.0" layoutY="482.0" text="Code:">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <JFXComboBox fx:id="cmbItemCode" layoutX="290.0" layoutY="510.0" onAction="#cmbItemOnAction" prefHeight="33.0" prefWidth="183.0" />
+        <Label fx:id="lblDescription" layoutX="289.0" layoutY="581.0" text="Program">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblUnitPrice" layoutX="489.0" layoutY="582.0" text="Totalcost">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblQtyOnHand" layoutX="291.0" layoutY="677.0" text="Need">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label layoutX="302.0" layoutY="739.0" text="LKR">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <TextField fx:id="txtQty" layoutX="288.0" layoutY="761.0" onAction="#txtQtyOnAction" prefHeight="33.0" prefWidth="66.0" />
+        <JFXButton fx:id="btnAddToCart" buttonType="RAISED" layoutX="509.0" layoutY="756.0" onAction="#btnAddToCartOnAction" prefHeight="33.0" prefWidth="91.0" style="-fx-background-color: #48dbfb;" text="Done" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <TableView fx:id="tblOrderCart" layoutX="704.0" layoutY="207.0" prefHeight="545.0" prefWidth="711.0">
+            <columns>
+                <TableColumn fx:id="colItemCode" prefWidth="109.722900390625" text="Code" />
+                <TableColumn fx:id="colDescription" prefWidth="127.277099609375" text="Program" />
+                <TableColumn fx:id="colQty" prefWidth="102.6951904296875" text="LkR" />
+                <TableColumn fx:id="colUnitPrice" prefWidth="142.8048095703125" text="Total Cost" />
+                <TableColumn fx:id="colTotal" prefWidth="125.387939453125" text="Due" />
+                <TableColumn fx:id="colAction" prefWidth="99.3878173828125" text="Action" />
+            </columns>
+        </TableView>
+        <JFXButton buttonType="RAISED" layoutX="1284.0" layoutY="779.0" onAction="#btnPlaceOrderOnAction" prefHeight="33.0" prefWidth="125.0" style="-fx-background-color: #48dbfb;" text="Confirm Payment" textFill="WHITE">
+            <cursor>
+                <Cursor fx:constant="HAND" />
+            </cursor>
+        </JFXButton>
+        <Label fx:id="lblNetTotal" layoutX="1270.0" layoutY="142.0" text="Due">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Label fx:id="lblCustomerName" layoutX="284.0" layoutY="408.0" text="Student Name">
+            <font>
+                <Font name="System Bold" size="15.0" />
+            </font>
+        </Label>
+        <Text layoutX="275.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment Id">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+        <Text layoutX="452.0" layoutY="252.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Date">
+            <font>
+                <Font size="15.0" />
+            </font>
+        </Text>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="117.0" layoutY="505.0" onMouseClicked="#btnResultOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="475.0">
+         <image>
+            <Image url="@../icon/icons8-correct-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="113.0" layoutY="773.0" onMouseClicked="#btnLogoutOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="743.0">
+         <image>
+            <Image url="@../icon/logout.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="1102.0" layoutY="777.0" onAction="#btnPaymentreportOnAction" prefHeight="33.0" prefWidth="125.0" style="-fx-background-color: #48dbfb;" text="Report" textFill="WHITE">
+         <cursor>
+            <Cursor fx:constant="HAND" />
+         </cursor>
+      </JFXButton>
+      <Text layoutX="290.0" layoutY="578.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Program">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="492.0" layoutY="577.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Total Cost">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="288.0" layoutY="673.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Need">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <Text layoutX="1232.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Due">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+    </children>
+</AnchorPane>

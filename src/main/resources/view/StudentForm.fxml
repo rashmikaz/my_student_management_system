@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextArea?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="1000.0" prefWidth="1500.0" style="-fx-background-color: DFE4EA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.StudentFormController">
+    <children>
+        <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1e1e1e" height="860.0" layoutX="169.0" layoutY="41.0" smooth="false" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" style="visibility: 100;" width="217.0" AnchorPane.rightAnchor="1237.0" AnchorPane.topAnchor="26.0" />
+        <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#f5f6fa" height="860.0" layoutX="282.0" layoutY="41.0" stroke="#f5f6fa" strokeType="INSIDE" width="1307.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="26.0">
+            <cursor>
+                <Cursor fx:constant="MOVE" />
+            </cursor>
+        </Rectangle>
+        <Label layoutX="257.0" layoutY="69.0" prefHeight="79.0" prefWidth="350.0" text="Student Manage" AnchorPane.rightAnchor="893.0" AnchorPane.topAnchor="69.0">
+            <font>
+                <Font name="System Bold" size="46.0" />
+            </font>
+        </Label>
+        <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#f1f2f6" height="651.0" layoutX="258.0" layoutY="183.0" stroke="#f1f2f6" strokeType="INSIDE" width="428.0" />
+        <JFXTextArea fx:id="txtId" layoutX="283.0" layoutY="213.0" onMouseClicked="#txtSearchOnAction" prefHeight="38.0" prefWidth="189.0" promptText="Student Id" />
+        <JFXTextArea fx:id="txtName" layoutX="278.0" layoutY="312.0" prefHeight="38.0" prefWidth="318.0" promptText="Name" />
+        <JFXTextArea fx:id="txtAddress" focusColor="#4d4d4d" layoutX="280.0" layoutY="425.0" prefHeight="38.0" prefWidth="251.0" promptText="address" />
+
+        <JFXTextArea fx:id="txtTel" layoutX="283.0" layoutY="548.0" prefHeight="38.0" prefWidth="261.0" promptText="Phone Number" />
+        <JFXTextArea fx:id="txtBirthday" layoutX="293.0" layoutY="655.0" prefHeight="38.0" prefWidth="261.0" promptText="Birth" />
+        <JFXButton buttonType="RAISED" layoutX="297.0" layoutY="777.0" onAction="#btnSaveOnAction" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #1e1e1e;" text="Add" textFill="WHITE" />
+        <JFXButton buttonType="RAISED" layoutX="371.0" layoutY="777.0" onAction="#btnUpdateOnAction" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #1e1e1e;" text="Update" textFill="WHITE" />
+        <JFXButton buttonType="RAISED" layoutX="450.0" layoutY="777.0" onAction="#btnDeleteOnAction" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #1e1e1e;" text="Delete" textFill="WHITE" />
+        <JFXButton buttonType="RAISED" layoutX="528.0" layoutY="777.0" onAction="#btnClearOnAction" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #1e1e1e;" text="Clear" textFill="WHITE" />
+        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="77.0" layoutY="129.0" onMouseClicked="#btnDashboardOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="95.0">
+            <image>
+                <Image url="@../icon/menu-regular-24.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="77.0" layoutY="224.0" onMouseClicked="#btnCustomerOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="190.0">
+            <image>
+                <Image url="@../icon/dashboardstudent.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="77.0" layoutY="319.0" onMouseClicked="#btnTeacherOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="285.0">
+            <image>
+                <Image url="@../icon/group-regular-24.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="77.0" layoutY="414.0" onMouseClicked="#btnPaymentOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="380.0">
+            <image>
+                <Image url="@../icon/icons8-circle-64.png" />
+            </image>
+        </ImageView>
+        <Rectangle arcHeight="100.0" arcWidth="100.0" fill="#f1f2f6" height="195.0" layoutX="754.0" layoutY="524.0" onMouseClicked="#btnstudenttableOnAction" stroke="WHITE" width="190.0" />
+        <Circle fill="#48dbfb" layoutX="829.0" layoutY="518.0" radius="31.0" stroke="WHITE" strokeType="INSIDE" />
+        <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="808.0" layoutY="497.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../icon/icons8-table-64.png" />
+            </image>
+        </ImageView>
+        <Text layoutX="779.0" layoutY="583.0" strokeType="OUTSIDE" strokeWidth="0.0" text="student table view">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Text>
+        <Text layoutX="779.0" layoutY="614.0" opacity="0.43" strokeType="OUTSIDE" strokeWidth="0.0" text="you can get all data from student deails here" wrappingWidth="149.5554990717144">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Text>
+        <Rectangle arcHeight="100.0" arcWidth="100.0" fill="#f1f2f6" height="195.0" layoutX="1175.0" layoutY="173.0" onMouseClicked="#btnregistrationOnAction" stroke="WHITE" width="190.0" />
+        <Circle fill="#feca57" layoutX="1250.0" layoutY="167.0" radius="31.0" stroke="WHITE" strokeType="INSIDE" />
+        <ImageView fitHeight="43.0" fitWidth="43.0" layoutX="1229.0" layoutY="146.0" pickOnBounds="true" preserveRatio="true">
+            <image>
+                <Image url="@../icon/icons8-registration-48.png" />
+            </image>
+        </ImageView>
+        <Text layoutX="1200.0" layoutY="232.0" strokeType="OUTSIDE" strokeWidth="0.0" text="student registration">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Text>
+        <Text layoutX="1200.0" layoutY="263.0" opacity="0.43" strokeType="OUTSIDE" strokeWidth="0.0" text="you can get all data from student deails here" wrappingWidth="149.5554990717144">
+            <font>
+                <Font size="17.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="37.0" fitWidth="37.0" layoutX="77.0" layoutY="509.0" onMouseClicked="#btnResultOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="475.0">
+            <image>
+                <Image url="@../icon/icons8-correct-64.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="70.0" layoutY="770.0" onMouseClicked="#btnLogoutOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="764.0">
+            <image>
+                <Image url="@../icon/logout.png" />
+            </image>
+        </ImageView>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#f1f2f6" height="279.0" layoutX="729.0" layoutY="181.0" stroke="#f1f2f6" strokeType="INSIDE" width="397.0" />
+      <JFXTextArea fx:id="txtEmail" layoutX="765.0" layoutY="214.0" prefHeight="38.0" prefWidth="261.0" promptText="Email address" />
+      <JFXTextArea fx:id="txtNic" layoutX="771.0" layoutY="334.0" prefHeight="38.0" prefWidth="261.0" promptText="Nic" />
+      <Circle fill="#f1c40f" layoutX="1215.0" layoutY="723.0" opacity="0.74" radius="161.0" stroke="WHITE" strokeType="INSIDE" />
+      <ImageView fitHeight="361.0" fitWidth="455.0" layoutX="1133.0" layoutY="420.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/vecteezy_3d-male-character-happy-jumping_24132283.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="368.0" fitWidth="358.0" layoutX="885.0" layoutY="495.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/vecteezy_3d-male-character-standing-confused-working-on-a-laptop_24387902.png" />
+         </image>
+      </ImageView>
+      <JFXButton buttonType="RAISED" layoutX="613.0" layoutY="778.0" onAction="#btnReportOnAction" prefHeight="30.0" prefWidth="60.0" style="-fx-background-color: #1e1e1e;" text="Report" textFill="WHITE" />
+    </children>
+</AnchorPane>

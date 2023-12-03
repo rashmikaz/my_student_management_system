@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- Created with Jaspersoft Studio version 6.2.0.final using JasperReports Library version 6.2.0  -->
+<!-- 2023-11-30T05:08:49 -->
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="Blank_A4_Landscape" pageWidth="842" pageHeight="595" orientation="Landscape" columnWidth="802" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="679d3c73-80d5-4d8c-be8d-3c0a76721668">
+	<property name="com.jaspersoft.studio.data.sql.tables" value=""/>
+	<property name="com.jaspersoft.studio.data.defaultdataadapter" value="New Data Adapter (4)"/>
+	<queryString>
+		<![CDATA[select * from teacher]]>
+	</queryString>
+	<field name="teacher_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="module_id" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="module_name" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="email_address" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="phone_number" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="nic" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<field name="qualification" class="java.lang.String">
+		<fieldDescription><![CDATA[]]></fieldDescription>
+	</field>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="79" splitType="Stretch">
+			<staticText>
+				<reportElement x="381" y="45" width="100" height="30" uuid="75913b50-50c9-461b-a3c3-7296beee01f9"/>
+				<text><![CDATA[Teachers Detail Report]]></text>
+			</staticText>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch"/>
+	</pageHeader>
+	<columnHeader>
+		<band height="61" splitType="Stretch">
+			<staticText>
+				<reportElement x="46" y="0" width="100" height="30" uuid="b011f84b-2999-49ea-9cc3-2dd2b24980ff"/>
+				<text><![CDATA[teacher_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="149" y="0" width="100" height="30" uuid="5875f174-121c-4aec-9a82-139b7c7bbb2a"/>
+				<text><![CDATA[name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="246" y="0" width="100" height="30" uuid="2cd8d09e-6093-4fed-a39d-3e4a0cd4d1a5"/>
+				<text><![CDATA[module_id]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="360" y="0" width="100" height="30" uuid="ce3d303e-9c4f-4b57-83b6-d78a4c8ff160"/>
+				<text><![CDATA[module_name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="452" y="0" width="100" height="30" uuid="5ae1d1ec-0ae4-4757-81b2-dc03221f2dca"/>
+				<text><![CDATA[email_address]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="610" y="0" width="100" height="30" uuid="fe9a2148-e1cd-4586-b2c2-757ca4c18d7a"/>
+				<text><![CDATA[phone_number]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="740" y="10" width="100" height="30" uuid="d82cd122-99de-4027-a308-f8b95a56013d"/>
+				<text><![CDATA[nic]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="125" splitType="Stretch">
+			<textField>
+				<reportElement x="46" y="63" width="100" height="30" uuid="550e8ec5-7763-435b-973e-14fd3a58dc75"/>
+				<textFieldExpression><![CDATA[$F{teacher_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="149" y="65" width="100" height="30" uuid="94e2635e-516e-4313-a853-4c3688cefa56"/>
+				<textFieldExpression><![CDATA[$F{name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="246" y="60" width="100" height="30" uuid="1a661bbd-d5b4-4106-a211-f0d77dd366fb"/>
+				<textFieldExpression><![CDATA[$F{module_id}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="351" y="62" width="100" height="30" uuid="63c151dd-7afc-43b5-be3f-59985602ff68"/>
+				<textFieldExpression><![CDATA[$F{module_name}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="452" y="62" width="100" height="30" uuid="e3ba433a-59ed-446a-ad30-8de642ddf2ab"/>
+				<textFieldExpression><![CDATA[$F{email_address}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="610" y="59" width="100" height="30" uuid="f18f0cf8-3f93-4ae1-b718-5c2065410faa"/>
+				<textFieldExpression><![CDATA[$F{phone_number}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="740" y="63" width="100" height="30" uuid="c893c15f-92b6-43e9-9a4e-a1ffdf6e7a9f"/>
+				<textFieldExpression><![CDATA[$F{nic}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

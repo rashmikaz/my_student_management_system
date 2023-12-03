@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1500.0" style="-fx-background-color: DFE4EA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.DatabaseImplementationattendancecontroller">
+   <children>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1e1e1e" height="860.0" layoutX="62.0" layoutY="36.0" smooth="false" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="217.0" AnchorPane.rightAnchor="1231.0" AnchorPane.topAnchor="26.0" />
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#f5f6fa" height="860.0" layoutX="176.0" layoutY="36.0" stroke="#f5f6fa" strokeType="INSIDE" width="1307.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="26.0">
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+      </Rectangle>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="97.0" layoutY="105.0" onMouseClicked="#btnDashboardOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="95.0">
+         <image>
+            <Image url="@../icon/menu-regular-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="97.0" layoutY="200.0" onMouseClicked="#btnCustomerOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="190.0">
+         <image>
+            <Image url="@../icon/dashboardstudent.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="97.0" layoutY="295.0" onMouseClicked="#btnTeacherOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="285.0">
+         <image>
+            <Image url="@../icon/group-regular-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="97.0" layoutY="390.0" onMouseClicked="#btnPaymentOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="380.0">
+         <image>
+            <Image url="@../icon/icons8-circle-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="97.0" layoutY="485.0" onMouseClicked="#btnResultOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="475.0">
+         <image>
+            <Image url="@../icon/icons8-correct-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="93.0" layoutY="753.0" onMouseClicked="#btnLogoutOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="764.0">
+         <image>
+            <Image url="@../icon/logout.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="239.0" layoutY="83.0" prefHeight="79.0" prefWidth="842.0" text="Database &amp; Implementation Attendance">
+         <font>
+            <Font name="System Bold" size="36.0" />
+         </font>
+      </Label>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#f1f2f6" height="600.0" layoutX="220.0" layoutY="201.0" stroke="#f1f2f6" strokeType="INSIDE" width="383.0" />
+      <ComboBox fx:id="cmbStudentId" layoutX="278.0" layoutY="240.0" onAction="#cmbStudentOnAction" prefHeight="35.0" prefWidth="173.0" promptText="Student Id" />
+      <JFXTextField fx:id="txtdate" layoutX="300.0" layoutY="500.0" promptText="date" />
+      <JFXButton buttonType="RAISED" layoutX="270.0" layoutY="595.0" onAction="#btnPresentOnAction" prefHeight="48.0" prefWidth="106.0" style="-fx-background-color: #1e1e1e;" text="Present" textFill="WHITE" />
+      <JFXButton buttonType="RAISED" layoutX="269.0" layoutY="698.0" onAction="#btnAbsentOnAction" prefHeight="48.0" prefWidth="106.0" style="-fx-background-color: #1e1e1e;" text="Absent" textFill="WHITE" />
+      <Label fx:id="lblStudentName" layoutX="284.0" layoutY="393.0" prefHeight="41.0" prefWidth="180.0">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Label>
+      <Text layoutX="298.0" layoutY="382.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Name">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <TableView fx:id="tblattendance" layoutX="672.0" layoutY="192.0" prefHeight="620.0" prefWidth="757.0">
+        <columns>
+          <TableColumn fx:id="colStudentId" prefWidth="147.66632080078125" text="StudentId" />
+          <TableColumn fx:id="colName" prefWidth="205.01611328125" text="Name" />
+            <TableColumn fx:id="colDate" prefWidth="203.48388671875" text="Date" />
+            <TableColumn fx:id="colType" prefWidth="200.4842529296875" text="Type" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

@@ -1,0 +1,250 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.chart.PieChart?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1500.0" style="-fx-background-color: DFE4EA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.DashboardFormController">
+   <children>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1e1e1e" height="860.0" layoutX="52.0" layoutY="26.0" smooth="false" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" style="visibility: 100;" width="217.0" AnchorPane.rightAnchor="1231.0" AnchorPane.topAnchor="26.0" />
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#f5f6fa" height="860.0" layoutX="166.0" layoutY="26.0" stroke="#f5f6fa" strokeType="INSIDE" width="1307.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="26.0">
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+      </Rectangle>
+      <Label layoutX="229.0" layoutY="73.0" prefHeight="79.0" prefWidth="265.0" text="Dashboard" AnchorPane.topAnchor="73.0">
+         <font>
+            <Font name="System Bold" size="46.0" />
+         </font>
+      </Label>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="87.0" layoutY="95.0" onMouseClicked="#btnDashboardOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="95.0">
+         <image>
+            <Image url="@../icon/menu-regular-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="87.0" layoutY="190.0" onMouseClicked="#btnCustomerOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="190.0">
+         <image>
+            <Image url="@../icon/dashboardstudent.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="87.0" layoutY="285.0" onMouseClicked="#btnTeacherOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="285.0">
+         <image>
+            <Image url="@../icon/group-regular-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="87.0" layoutY="380.0" onMouseClicked="#btnPaymentOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="380.0">
+         <image>
+            <Image url="@../icon/icons8-circle-64.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="WHITE" height="187.0" layoutX="187.0" layoutY="200.0" onMouseClicked="#btnstudenttableOnAction" stroke="WHITE" width="185.0" />
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#ffdd59" height="191.0" layoutX="408.0" layoutY="198.0" onMouseClicked="#btnstudenttableOnAction" stroke="WHITE" width="197.0" />
+      <Rectangle arcHeight="100.0" arcWidth="100.0" fill="#079992" height="204.0" layoutX="189.0" layoutY="411.0" onMouseClicked="#btnstudenttableOnAction" stroke="WHITE" width="451.0" />
+      <Text layoutX="205.0" layoutY="251.0" opacity="0.71" strokeType="OUTSIDE" strokeWidth="0.0" text="Student">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Text layoutX="419.0" layoutY="245.0" opacity="0.71" strokeType="OUTSIDE" strokeWidth="0.0" text="Teachers &amp; Staff">
+         <font>
+            <Font name="System Bold" size="22.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblStudentcount" layoutX="208.0" layoutY="269.0" opacity="0.59" prefHeight="95.0" prefWidth="126.0" text="Label">
+         <font>
+            <Font name="System Bold" size="64.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTeachersCount" layoutX="457.0" layoutY="281.0" text="Label">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblCourseTotal" layoutX="240.0" layoutY="450.0" prefHeight="40.0" prefWidth="81.0" text="Label" textFill="WHITE">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <Text fill="WHITE" layoutX="223.0" layoutY="522.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Over eight Courses and Program we offer for the software engineering industry" wrappingWidth="160.38398768096044">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="171.0" fitWidth="234.0" layoutX="388.0" layoutY="417.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/TorOctober1.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="87.0" layoutY="475.0" onMouseClicked="#btnResultOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="475.0">
+         <image>
+            <Image url="@../icon/icons8-correct-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="88.0" layoutY="764.0" onMouseClicked="#btnLogoutOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="764.0">
+         <image>
+            <Image url="@../icon/logout.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="WHITE" height="806.0" layoutX="936.0" layoutY="46.0" stroke="WHITE" width="478.0" />
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="WHITE" height="326.0" layoutX="956.0" layoutY="64.0" stroke="#00000042" width="437.0" />
+      <Text layoutX="1008.0" layoutY="157.0" opacity="0.72" strokeType="OUTSIDE" strokeWidth="0.0" text="Have a Good day," wrappingWidth="336.5459387386637">
+         <font>
+            <Font name="System Bold Italic" size="45.0" />
+         </font>
+      </Text>
+      <Text layoutX="1250.0" layoutY="220.0" strokeType="OUTSIDE" strokeWidth="0.0" text="👋">
+         <font>
+            <Font size="51.0" />
+         </font>
+      </Text>
+      <Text layoutX="1038.0" layoutY="204.0" opacity="0.72" strokeType="OUTSIDE" strokeWidth="0.0" text="Rashmikas">
+         <font>
+            <Font name="System Bold" size="40.0" />
+         </font>
+      </Text>
+      <Text layoutX="1016.0" layoutY="268.0" opacity="0.72" strokeType="OUTSIDE" strokeWidth="0.0" text="Get familiar with the dashboard, here are some ways to get started" wrappingWidth="334.9871399268742">
+         <font>
+            <Font name="System Bold Italic" size="22.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#a29bfe" height="228.0" layoutX="194.0" layoutY="635.0" onMouseClicked="#btnstudenttableOnAction" stroke="WHITE" width="145.0" />
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#a29bfe" height="193.0" layoutX="784.0" layoutY="199.0" stroke="WHITE" width="137.0" />
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#079992" height="194.0" layoutX="623.0" layoutY="194.0" stroke="WHITE" width="143.0" />
+      <Text fill="WHITE" layoutX="215.0" layoutY="676.0" opacity="0.74" strokeType="OUTSIDE" strokeWidth="0.0" text="Courses &amp; Programs" wrappingWidth="135.9985083242841">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="216.0" layoutY="737.0" onMouseClicked="#addcoursesOnAction" strokeType="OUTSIDE" strokeWidth="0.0" text="you can add courses and manage them here" wrappingWidth="89.62113682199367">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="656.0" layoutY="224.0" opacity="0.74" strokeType="OUTSIDE" strokeWidth="0.0" text="Teachers List of Institute" wrappingWidth="110.68925973879652">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="806.0" layoutY="263.0" onMouseClicked="#addmodulesOnAction" strokeType="OUTSIDE" strokeWidth="0.0" text="add module from courses and you can view the all modules from table " wrappingWidth="89.62113682199367">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="804.0" layoutY="230.0" opacity="0.74" strokeType="OUTSIDE" strokeWidth="0.0" text="Modules" wrappingWidth="135.9985083242841">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Text>
+      <PieChart fx:id="payPieChart" layoutX="990.0" layoutY="420.0" prefHeight="391.0" prefWidth="400.0" />
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1e1e1e" height="193.0" layoutX="635.0" layoutY="666.0" onMouseClicked="#btnstudenttableOnAction" stroke="WHITE" width="273.0" />
+      <Text fill="WHITE" layoutX="656.0" layoutY="714.0" onMouseClicked="#btnFinancialOnAction" opacity="0.74" strokeType="OUTSIDE" strokeWidth="0.0" text="Need Financial Details ?" wrappingWidth="160.38398768096044">
+         <font>
+            <Font name="System Bold Italic" size="30.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="656.0" layoutY="814.0" strokeType="OUTSIDE" strokeWidth="0.0" text="we offer for the software engineering industry" wrappingWidth="137.99798583984375">
+         <font>
+            <Font size="15.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="211.0" fitWidth="216.0" layoutX="574.0" layoutY="96.0" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1055.0" AnchorPane.topAnchor="184.0">
+         <image>
+            <Image url="@../images/3dstudent.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#6d67e4" height="107.0" layoutX="651.0" layoutY="409.0" stroke="WHITE" width="140.0" />
+      <Text fill="WHITE" layoutX="648.0" layoutY="301.0" onMouseClicked="#btnteacherstableOnAction" strokeType="OUTSIDE" strokeWidth="0.0" text="you can view all deatils of teachers we have" wrappingWidth="89.62113682199367">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#62cdff" height="225.0" layoutX="356.0" layoutY="637.0" onMouseClicked="#btnstudenttableOnAction" stroke="WHITE" width="151.0" />
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#73bbc9" height="211.0" layoutX="801.0" layoutY="411.0" onMouseClicked="#btnstudenttableOnAction" stroke="WHITE" width="122.0" />
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#7f8487" height="116.0" layoutX="648.0" layoutY="534.0" stroke="WHITE" width="140.0" />
+      <ImageView fitHeight="226.0" fitWidth="226.0" layoutX="767.0" layoutY="618.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/3d.png" />
+         </image>
+      </ImageView>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#73bbc9" height="112.0" layoutX="801.0" layoutY="541.0" onMouseClicked="#btnstudenttableOnAction" stroke="#73bbc9" width="71.0" />
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#62cdff" height="128.0" layoutX="361.0" layoutY="732.0" onMouseClicked="#btnstudenttableOnAction" stroke="#62cdff" width="261.0" />
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#3d5872" height="88.0" layoutX="528.0" layoutY="633.0" onMouseClicked="#btnstudenttableOnAction" stroke="WHITE" width="90.0" />
+      <Text fill="WHITE" layoutX="675.0" layoutY="435.0" opacity="0.74" strokeType="OUTSIDE" strokeWidth="0.0" text="Schedule" wrappingWidth="135.9985083242841">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="678.0" layoutY="459.0" onMouseClicked="#btnScheduleOnAction" strokeType="OUTSIDE" strokeWidth="0.0" text="add schedule for manage system" wrappingWidth="101.84711458698177">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="376.0" layoutY="672.0" opacity="0.74" strokeType="OUTSIDE" strokeWidth="0.0" text="Student" wrappingWidth="135.9985083242841">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="386.0" layoutY="717.0" onMouseClicked="#btnstudenttableOnAction" strokeType="OUTSIDE" strokeWidth="0.0" text="You can get all data of our student and manage them" wrappingWidth="89.62113682199367">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="719.0" layoutY="530.0" opacity="0.74" rotate="-90.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Daily Attendances" wrappingWidth="202.21586813339536">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="841.0" layoutY="452.0" onMouseClicked="#btnAttOnAction" strokeType="OUTSIDE" strokeWidth="0.0" text="You can report the daily attendances of student and manage system" wrappingWidth="78.6072621873584">
+         <font>
+            <Font size="16.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="80.0" fitWidth="130.0" layoutX="971.0" layoutY="310.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/vecteezy_hand-drawn-circle-frame-decoration-element-with-leaves-and_22182929.png" />
+         </image>
+      </ImageView>
+      <Circle fill="WHITE" layoutX="558.0" layoutY="788.0" radius="30.0" stroke="WHITE" strokeType="INSIDE" />
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="537.0" layoutY="767.0" pickOnBounds="true" preserveRatio="true" rotate="-55.7">
+         <image>
+            <Image url="@../images/icons8-down-50.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="133.0" fitWidth="140.0" layoutX="369.0" layoutY="775.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/Untitled.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="661.0" layoutY="576.0" onMouseClicked="#btnGuidOnAction" opacity="0.74" strokeType="OUTSIDE" strokeWidth="0.0" text="Guidlines for    admin" wrappingWidth="81.27011236681994">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="73.0" fitWidth="66.0" layoutX="720.0" layoutY="570.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/icons8-move-right-female-100.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="544.0" layoutY="684.0" opacity="0.74" strokeType="OUTSIDE" strokeWidth="0.0" text="Report" wrappingWidth="81.27011236681994">
+         <font>
+            <Font name="System Bold Italic" size="21.0" />
+         </font>
+      </Text>
+      <Label fx:id="lblDate" layoutX="1122.0" layoutY="333.0" prefHeight="51.0" prefWidth="156.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Label>
+      <Label fx:id="lblTime" layoutX="1260.0" layoutY="334.0" prefHeight="47.0" prefWidth="116.0" text="Label">
+         <font>
+            <Font size="20.0" />
+         </font></Label>
+   </children>
+</AnchorPane>

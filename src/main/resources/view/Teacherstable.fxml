@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1500.0" style="-fx-background-color: DFE4EA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.Teacherstablecontroller">
+   <children>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1e1e1e" height="853.0" layoutX="62.0" layoutY="36.0" smooth="false" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="217.0" AnchorPane.rightAnchor="1231.0" AnchorPane.topAnchor="26.0" />
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#f5f6fa" height="854.0" layoutX="176.0" layoutY="36.0" stroke="#f5f6fa" strokeType="INSIDE" width="1307.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="26.0">
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+      </Rectangle>
+      <TableView fx:id="tblTeacher" layoutX="216.0" layoutY="159.0" prefHeight="689.0" prefWidth="1224.0">
+        <columns>
+          <TableColumn fx:id="colId" prefWidth="108.88923645019531" text="Id" />
+          <TableColumn fx:id="colName" prefWidth="157.47305297851562" text="Name" />
+            <TableColumn fx:id="colModuleid" prefWidth="128.8621826171875" text="module Id" />
+            <TableColumn fx:id="colModulename" prefWidth="188.11083984375" text="Module Name" />
+            <TableColumn fx:id="colEmail" prefWidth="231.88916015625" text="Email" />
+            <TableColumn fx:id="colPhone" prefWidth="122.2449951171875" text="Phone" />
+            <TableColumn fx:id="colNic" prefWidth="142.7012939453125" text="Nic" />
+            <TableColumn fx:id="colQualification" prefWidth="148.7987060546875" text="Qualification" />
+        </columns>
+      </TableView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="90.0" layoutY="205.0" onMouseClicked="#btnDashboardOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="95.0">
+         <image>
+            <Image url="@../icon/menu-regular-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="104.0" layoutY="287.0" onMouseClicked="#btnStudentOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="190.0">
+         <image>
+            <Image url="@../icon/dashboardstudent.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="208.0" layoutY="423.0" onMouseClicked="#btnTeacherOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="285.0">
+         <image>
+            <Image url="@../icon/group-regular-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="215.0" layoutY="506.0" onMouseClicked="#btnPaymentOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="380.0">
+         <image>
+            <Image url="@../icon/icons8-circle-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="117.0" layoutY="505.0" onMouseClicked="#btnResultOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="475.0">
+         <image>
+            <Image url="@../icon/icons8-correct-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="113.0" layoutY="773.0" onMouseClicked="#btnLogoutOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="743.0">
+         <image>
+            <Image url="@../icon/logout.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="232.0" layoutY="78.0" text="Teachers Table">
+         <font>
+            <Font name="System Bold" size="34.0" />
+         </font>
+      </Label>
+   </children>
+</AnchorPane>

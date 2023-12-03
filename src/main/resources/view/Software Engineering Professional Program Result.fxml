@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1500.0" style="-fx-background-color: DFE4EA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.SoftwareEngineeringProfessionalProgramResultcontroller">
+    <children>
+        <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1e1e1e" height="842.0" layoutX="179.0" layoutY="51.0" smooth="false" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="217.0" AnchorPane.rightAnchor="1231.0" AnchorPane.topAnchor="26.0" />
+        <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#f5f6fa" height="843.0" layoutX="293.0" layoutY="51.0" stroke="#f5f6fa" strokeType="INSIDE" width="1307.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="26.0">
+            <cursor>
+                <Cursor fx:constant="MOVE" />
+            </cursor>
+        </Rectangle>
+        <Label layoutX="266.0" layoutY="102.0" prefHeight="79.0" prefWidth="923.0" text="Software Engineering Professional Program">
+            <font>
+                <Font name="System Bold" size="36.0" />
+            </font>
+        </Label>
+        <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#f1f2f6" height="71.0" layoutX="276.0" layoutY="241.0" onMouseClicked="#btnstudenttableOnAction" stroke="WHITE" width="336.0" />
+        <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#f1f2f6" height="70.0" layoutX="275.0" layoutY="332.0" onMouseClicked="#btnstudenttableOnAction" stroke="WHITE" width="339.0" />
+        <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#f1f2f6" height="70.0" layoutX="273.0" layoutY="420.0" onMouseClicked="#btnstudenttableOnAction" stroke="WHITE" width="342.0" />
+        <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#f1f2f6" height="70.0" layoutX="275.0" layoutY="516.0" onMouseClicked="#btnstudenttableOnAction" stroke="WHITE" width="339.0" />
+        <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#f1f2f6" height="70.0" layoutX="271.0" layoutY="605.0" onMouseClicked="#btnstudenttableOnAction" stroke="WHITE" width="343.0" />
+        <Rectangle arcHeight="50.0" arcWidth="50.0" fill="#f1f2f6" height="70.0" layoutX="265.0" layoutY="711.0" onMouseClicked="#btnstudenttableOnAction" stroke="WHITE" width="355.0" />
+        <Text layoutX="293.0" layoutY="271.0" onMouseClicked="#btnSem1OnAction" opacity="0.46" strokeType="OUTSIDE" strokeWidth="0.0" text="Sem 1: Database Design and Implementation" wrappingWidth="318.856689453125">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Text>
+        <Text layoutX="289.0" layoutY="361.0" opacity="0.46" strokeType="OUTSIDE" strokeWidth="0.0" text="Sem 1: Fundamental Concepts of Computer Science" wrappingWidth="318.856689453125">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Text>
+        <Text layoutX="289.0" layoutY="452.0" opacity="0.46" strokeType="OUTSIDE" strokeWidth="0.0" text="Sem 1: Computer Programming" wrappingWidth="318.856689453125">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Text>
+        <Text layoutX="294.0" layoutY="543.0" opacity="0.46" strokeType="OUTSIDE" strokeWidth="0.0" text="Sem 2: Object Oriented Design and Development" wrappingWidth="318.856689453125">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Text>
+        <Text layoutX="298.0" layoutY="639.0" opacity="0.46" strokeType="OUTSIDE" strokeWidth="0.0" text="Sem 2: Data Structures and Algorithms" wrappingWidth="318.856689453125">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Text>
+        <Text layoutX="299.0" layoutY="744.0" opacity="0.46" strokeType="OUTSIDE" strokeWidth="0.0" text="Sem 2: Software Engineering Team Project" wrappingWidth="318.856689453125">
+            <font>
+                <Font size="22.0" />
+            </font>
+        </Text>
+        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="217.0" layoutY="240.0" onMouseClicked="#btnDashboardOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="95.0">
+            <image>
+                <Image url="@../icon/menu-regular-24.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="214.0" layoutY="335.0" onMouseClicked="#btnCustomerOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="190.0">
+            <image>
+                <Image url="@../icon/dashboardstudent.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="212.0" layoutY="439.0" onMouseClicked="#btnTeacherOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="285.0">
+            <image>
+                <Image url="@../icon/group-regular-24.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="211.0" layoutY="541.0" onMouseClicked="#btnPaymentOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="380.0">
+            <image>
+                <Image url="@../icon/icons8-circle-64.png" />
+            </image>
+        </ImageView>
+        <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="178.0" layoutY="634.0" onMouseClicked="#btnResultOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="475.0">
+            <image>
+                <Image url="@../icon/icons8-correct-64.png" />
+            </image>
+        </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="113.0" layoutY="773.0" onMouseClicked="#btnLogoutOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="743.0">
+         <image>
+            <Image url="@../icon/logout.png" />
+         </image>
+      </ImageView>
+      <Circle fill="#ffdd59" layoutX="1142.0" layoutY="599.0" radius="204.0" stroke="#ffdd59" strokeType="INSIDE" />
+      <ImageView fitHeight="558.0" fitWidth="564.0" layoutX="689.0" layoutY="252.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/vecteezy_3d-male-character-happy-working-on-a-laptop_24387907.png" />
+         </image>
+      </ImageView>
+    </children>
+</AnchorPane>

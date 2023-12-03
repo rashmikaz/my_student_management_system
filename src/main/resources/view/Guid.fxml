@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Circle?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="root" prefHeight="1000.0" prefWidth="1500.0" style="-fx-background-color: DFE4EA;" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.controller.Guidcontroller">
+   <children>
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#1e1e1e" height="860.0" layoutX="62.0" layoutY="36.0" smooth="false" stroke="BLACK" strokeLineCap="ROUND" strokeType="INSIDE" width="352.0" AnchorPane.rightAnchor="1096.0" AnchorPane.topAnchor="26.0" />
+      <Rectangle arcHeight="60.0" arcWidth="60.0" fill="#f5f6fa" height="860.0" layoutX="176.0" layoutY="36.0" stroke="#f5f6fa" strokeType="INSIDE" width="1126.0" AnchorPane.rightAnchor="27.0" AnchorPane.topAnchor="26.0">
+         <cursor>
+            <Cursor fx:constant="MOVE" />
+         </cursor>
+      </Rectangle>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="97.0" layoutY="105.0" onMouseClicked="#btnDashboardOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="95.0">
+         <image>
+            <Image url="@../icon/menu-regular-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="97.0" layoutY="200.0" onMouseClicked="#btnCustomerOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="190.0">
+         <image>
+            <Image url="@../icon/dashboardstudent.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="97.0" layoutY="295.0" onMouseClicked="#btnTeacherOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="285.0">
+         <image>
+            <Image url="@../icon/group-regular-24.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="97.0" layoutY="390.0" onMouseClicked="#btnPaymentOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="380.0">
+         <image>
+            <Image url="@../icon/icons8-circle-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="40.0" fitWidth="40.0" layoutX="97.0" layoutY="485.0" onMouseClicked="#btnResultOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="475.0">
+         <image>
+            <Image url="@../icon/icons8-correct-64.png" />
+         </image>
+      </ImageView>
+      <ImageView fitHeight="47.0" fitWidth="47.0" layoutX="98.0" layoutY="774.0" onMouseClicked="#btnLogoutOnAction" pickOnBounds="true" preserveRatio="true" AnchorPane.rightAnchor="1373.0" AnchorPane.topAnchor="764.0">
+         <image>
+            <Image url="@../icon/logout.png" />
+         </image>
+      </ImageView>
+      <Text fill="WHITE" layoutX="148.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Dashboard">
+         <font>
+            <Font size="34.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="153.0" layoutY="226.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Student">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="151.0" layoutY="319.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Teachers">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="152.0" layoutY="413.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Payment">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="145.0" layoutY="508.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Results">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text fill="WHITE" layoutX="150.0" layoutY="799.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Logout">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Text layoutX="420.0" layoutY="174.0" strokeType="OUTSIDE" strokeWidth="0.0" text="1st step: If you are new admin then you have to create account so click the signup button and go for signup page and then you can create account and login" wrappingWidth="626.2327270507812">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="417.0" layoutY="300.0" strokeType="OUTSIDE" strokeWidth="0.0" text="2nd step:  now you can add the students by clicking on the student button on the left side" wrappingWidth="626.2327270507812">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="414.0" layoutY="405.0" strokeType="OUTSIDE" strokeWidth="0.0" text="3rd step: you can also add teachers in the same way as student are added,click on the teacher icon and enter all of the teachers data" wrappingWidth="626.2327270507812">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="412.0" layoutY="540.0" strokeType="OUTSIDE" strokeWidth="0.0" text="4th step: If a child makes a payment as soon as he is added to the system, you can click on the payment icon and go to New Payment and make the payment.  " wrappingWidth="626.2327270507812">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="408.0" layoutY="690.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5th step : Once a child is added, if he does not make a payment, enter the amount to be received from him, click on the payment icon and go to due payment." wrappingWidth="626.2327270507812">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="404.0" layoutY="817.0" strokeType="OUTSIDE" strokeWidth="0.0" text="6th step;  Results can be added in courses and modules by clicking on the result icon" wrappingWidth="626.2327270507812">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text layoutX="424.0" layoutY="106.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Some instruction for the admin">
+         <font>
+            <Font size="36.0" />
+         </font>
+      </Text>
+      <Circle fill="#f1c40f" layoutX="1256.0" layoutY="680.0" opacity="0.74" radius="161.0" stroke="WHITE" strokeType="INSIDE" />
+      <ImageView fitHeight="490.0" fitWidth="451.0" layoutX="1015.0" layoutY="391.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../images/vecteezy_3d-male-character-standing-confused-working-on-a-laptop_24387902.png" />
+         </image>
+      </ImageView>
+   </children>
+</AnchorPane>
