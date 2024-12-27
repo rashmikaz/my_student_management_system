@@ -6,5 +6,6 @@ public class AppInitializerWrapper {
         AppInitializer.main(args);
         System.out.println("hello");
         System.out.println("hellooooo");
+        System.out.println("test");
     }
 }

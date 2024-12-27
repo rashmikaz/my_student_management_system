@@ -15,6 +15,7 @@ public class Coursemodel {
         Connection connection = DbConnection.getInstance().getConnection();
 
 
+
         String sql = "INSERT INTO course VALUES(? , ? , ? , ? , ? ,? )";
         PreparedStatement pstm = connection.prepareStatement(sql);
 
